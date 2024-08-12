@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Stock Symbol Lookup{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4">
+        <form method="POST" action="/">
+          <div class="mb-3">
+            <input type="text" name="symbol" id="symbol" class="form-control" placeholder="Symbol" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Get Company Overview</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
